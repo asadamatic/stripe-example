@@ -1,0 +1,43 @@
+name: stripe_example
+description: Demonstrates how to use the stripe plugin.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_stripe: ^9.4.0
+  flutter_stripe_web: ^4.4.0
+  stripe_checkout: ^1.0.1
+  pay: ^1.1.0
+  http: ^0.13.1
+  font_awesome_flutter: ^9.2.0
+  platform: ^3.0.0
+  flutter_multi_formatter: ^2.11.11
+  flutter_credit_card: ^3.0.7
+  credit_card_validator: ^2.1.0
+  flutter_svg: ^2.0.7
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: any
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/card_icons/
+    - assets/cards/
+  fonts:
+    - family: OtomanopeeOne
+      fonts:
+        - asset: fonts/OtomanopeeOne.ttf
